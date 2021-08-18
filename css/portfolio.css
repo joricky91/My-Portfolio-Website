@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+nav{
+    background-color: #090C14;
+}
+
+.portfolio{
+    background-color: #090C14;
+}
+
+.portfolio .project-list .project .project-image{
+    width: 20rem;
+    height: 10rem;
+}
+
+footer{
+    background-color: #1B1B21;
+}
