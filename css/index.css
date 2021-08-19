@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 *{
     margin: 0;
@@ -12,20 +12,207 @@ body{
     font-family: "Poppins", sans-serif;
 }
 
-nav{
+/* Header Section */
+header{
     background-color: #090C14;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    /* position: absolute; */
+    width: 100%;
+    min-height: 4rem;
+    padding: 2rem;
 }
 
-.introduction{
-    background-color: #090C14;
+nav > ul{
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 1.5rem;
 }
 
-.my-skill{
+nav > ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.name{
+    width: 60vw;
+    margin-left: 2rem;
+}
+
+/* About me Section */
+.introduction-wrapper{
+    background-color: #090C14;
+    display: flex;
+    align-items: center;
+    max-height: 85vh;
+}
+
+.introduction-wrapper .introduction{
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.introduction-wrapper .introduction .text{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.introduction-wrapper .introduction .text h1{
+    color: #EDBF4B;
+    margin-bottom: .4rem;
+    font-weight: 700;
+}
+
+.introduction-wrapper .introduction .text a{
+    border: 1px solid #EDBF4B;
+    background-color: #EDBF4B;
+    width: 145px;
+    text-align: center;
+    padding: .4rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.introduction-wrapper .introduction img{
+    display: flex;
+    width: 35%;
+    margin-left: 6rem;
+    margin-right: 2rem;
+}
+
+/* Skill Section */
+.skill-wrapper{
     background-color: #1B1B21;
+    display: flex;
 }
 
-.portfolio{
+.skill-wrapper .skill{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 6.5rem;
+    margin-top: .5rem;
+}
+
+.skill-wrapper .skill h2{
+    color: #EDBF4B;
+    font-weight: 700;
+}
+
+.skill-wrapper h2::after{
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid white;
+    width: 1.5rem;
+    margin: 0 .5rem;
+    transform: translateY(-.4rem);
+}
+
+.skill-wrapper .my-skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.skill-wrapper .my-skill .hard,
+.skill-wrapper .my-skill .tools,
+.skill-wrapper .my-skill .soft{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.skill-wrapper .my-skill ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.skill-wrapper .my-skill ul li{
+    margin-top: .7rem;
+    margin-right: 1rem;
+    border: 1px solid #3E3E3E;
+    background-color: #3E3E3E;
+    padding: .2rem 2rem;
+}
+
+/* Portfolio Section */
+.portfolio-wrapper{
     background-color: #090C14;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-wrapper .portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3.5rem;
+}
+
+.portfolio-wrapper .portfolio h2{
+    color: #EDBF4B;
+    font-weight: 700;
+}
+
+.portfolio-wrapper .portfolio h2::before,
+.portfolio-wrapper .portfolio h2::after{
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid white;
+    width: 1.5rem;
+    margin: 0 .5rem;
+    transform: translateY(-.4rem);
+}
+
+.portfolio-wrapper .portfolio .more{
+    border: 1px solid #EDBF4B;
+    background-color: #EDBF4B;
+    width: 145px;
+    text-align: center;
+    padding: .4rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.portfolio-wrapper .portfolio .project-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio-wrapper .portfolio .project-wrapper .project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.portfolio-wrapper .portfolio .project-wrapper .project .title{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #3E3E3E;
+    background-color: #3E3E3E;
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
 }
 
 .portfolio .project-image{
@@ -33,6 +220,7 @@ nav{
     height: 10rem;
 }
 
+/* Footer Section */
 footer{
     background-color: #1B1B21;
 }

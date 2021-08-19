@@ -10,58 +10,83 @@
 </head>
 <body>
     <main class="container">
-        <nav>
-            <p>Jonathan Ricky S</p>
-            <ul>
-                <li>Home</li>
-                <li>Projects</li>
-            </ul>
-        </nav>
-        <div class="introduction">
-            <div class="text">
-                <h1>Hi, I’m Jonathan Ricky Sandjaja </h1>
-                <p>I am an undergraduate student at Binus University Bandung majoring in Computer
-                    Science. I am a front-end web developer and also UI/UX designer. I volunteered in
-                    some organization as staff member and currently I’m looking for a job.</p>
-                <button>Download CV</button>
+        <header>
+            <div class="name">
+                <p>Jonathan Ricky S</p>
             </div>
-            <img src="/images/profile picture.png" alt="profile-picture">
-        </div>
-
-        <div class="my-skill">
-            <h2>My Skills</h2><span></span>
-            <div class="hard">
-                <h3>Hard Skill:</h3>
+            <nav>
                 <ul>
-                    <li>HTML <span></span></li>
-                    <li>CSS <span></span></li>
-                    <li>Javascript <span></span></li>
-                    <li>Bootsrap <span></span></li>
-                    <li>UI/UX <span></span></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="/html/project.html">Projects</a></li>
                 </ul>
-            </div>
-            <div class="soft">
-                <h3>Soft Skill:</h3>
-                <ul>
-                    <li>Leadership <span></span></li>
-                    <li>Teamwork <span></span></li>
-                    <li>Time Management <span></span></li>
-                    <li>Communication <span></span></li>
-                </ul>
+            </nav>
+        </header>
+        <div class="introduction-wrapper">
+            <div class="introduction">
+                <div class="text">
+                    <h1>Hi, I’m Jonathan Ricky Sandjaja </h1>
+                    <p>I am an undergraduate student at Binus University Bandung majoring in Computer
+                        Science. I am a front-end web developer and also UI/UX designer. I volunteered in
+                        some organization as staff member and currently I’m looking for a job.</p>
+                    <a href="#">Download CV</a>
+                </div>
+                <img src="/images/profile picture.png" alt="profile-picture">
             </div>
         </div>
 
-        <div class="portfolio">
-            <h2>Portfolio</h2>
-            <div class="project">
-                <img class="project-image" src="/images/article preview.png" alt="article-preview">
-                <div class="title">Article Preview Component</div>
+        <div class="skill-wrapper">
+            <div class="skill">
+                <h2>My Skills</h2><span></span>
+                <div class="my-skill">
+                    <div class="hard">
+                        <h3>Hard Skill:</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Bootstrap</li>
+                            <li>PHP</li>
+                            <li>Laravel</li>
+                            <li>UI/UX</li>
+                        </ul>
+                    </div>
+                    <div class="tools">
+                        <h3>Tools:</h3>
+                        <ul>
+                            <li>Adobe Photoshop</li>
+                            <li>Figma</li>
+                            <li>Microsoft Office</li>
+                            <li>VS Code</li>
+                        </ul>
+                    </div>
+                    <div class="soft">
+                        <h3>Soft Skill:</h3>
+                        <ul>
+                            <li>Leadership</li>
+                            <li>Teamwork</li>
+                            <li>Time Management</li>
+                            <li>Communication</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        
+        <div class="portfolio-wrapper">
+            <div class="portfolio">
+                <h2>Portfolio</h2>
+                <div class="project-wrapper">
+                    <div class="project">
+                        <img class="project-image" src="/images/article preview.png" alt="article-preview">
+                        <a href="./article-preview.html" class="title">Article Preview Component</a>
+                    </div>
+                    <div class="project">
+                        <img class="project-image" src="/images/profile card.png" alt="profile-card">
+                        <a href="./profile-card.html" class="title">Profile Card Component</a>
+                    </div>
+                </div>
+                <a class="more" href="./project.html">More</a>
             </div>
-            <div class="project">
-                <img class="project-image" src="/images/profile card.png" alt="profile-card">
-                <div>Profile Card Component</div>
-            </div>
-            <button>More</button>
         </div>
     </main>
 
