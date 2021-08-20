@@ -9,22 +9,132 @@
 body{
     color: white;
     height: 100vh;
+    max-height: 100%;
+    width: 100vw;
+    max-width: 100%;
     font-family: "Poppins", sans-serif;
 }
 
-nav{
+/* Header Section */
+header{
     background-color: #090C14;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    /* position: absolute; */
+    width: 100%;
+    min-height: 4rem;
+    padding: 2rem;
+}
+
+nav > ul{
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    margin-right: 1.5rem;
+}
+
+nav > ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.name{
+    width: 60vw;
+    margin-left: 2rem;
 }
 
 .portfolio{
     background-color: #090C14;
 }
 
-.portfolio .project-list .project .project-image{
+.portfolio .category ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.portfolio .project-image{
     width: 20rem;
     height: 10rem;
 }
 
+.portfolio .project-list-all{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio .project-list-frontend{
+    display: none;
+    flex-direction: column;
+}
+
+.portfolio .project-list-uiux{
+    display: none;
+    flex-direction: column;
+}
+
+/* Footer Section */
 footer{
     background-color: #1B1B21;
+    display: flex;
+}
+
+.footer-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 6.5rem 1.5rem 6.5rem;
+}
+
+.footer-wrapper h2{
+    color: #EDBF4B;
+}
+
+.footer-wrapper h2::after{
+    display: inline-block;
+    content: "";
+    border-top: .2rem solid white;
+    width: 1.5rem;
+    margin: 0 .5rem;
+    transform: translateY(-.4rem);
+}
+
+.footer-wrapper p{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.footer-wrapper .footer-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-wrapper .footer-menu ul{
+    list-style-type: none;
+}
+
+.footer-wrapper .footer-menu ul li{
+    margin-top: 1.5rem;
+}
+
+.footer-wrapper .footer-menu span{
+    margin-left: .7rem;
+}
+
+.footer-wrapper .footer-menu .contact{
+    margin-left: 1.5rem;
+}
+
+.footer-wrapper .footer-menu .menu{
+    margin-right: 1rem;
+}
+
+.footer-wrapper .footer-menu .contact{
+    display: flex;
+    flex-direction: column;
 }

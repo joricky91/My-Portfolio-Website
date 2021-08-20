@@ -5,47 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="/css/portfolio.css">
+    <link rel="stylesheet" href="../css/portfolio.css">
     <title>Portfolio Website</title>
 </head>
 <body>
     <main class="container">
-        <nav>
-            <p>Jonathan Ricky S</p>
-            <ul>
-                <li>Home</li>
-                <li>Projects</li>
-            </ul>
-        </nav>
+        <header>
+            <div class="name">
+                <p>Jonathan Ricky S</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="../html/project.html">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
 
         <div class="portfolio">
+            <h2>Portfolio</h2>
             <div class="category">
                 <ul>
-                    <li>All</li>
-                    <li>UI/UX</li>
-                    <li>Front-end</li>
+                    <li><a href="#" id="btnAll">All</a></li>
+                    <li><a href="#" id="btnFront">Front-end</a></li>
+                    <li><a href="#" id="btnUI">UI/UX</a></li>
                 </ul>
             </div>
-            <h2>Portfolio</h2>
-            <div class="project-list">
+           
+            <div class="project-list-all">
                 <div class="project">
-                    <img class="project-image" src="/images/article preview.png" alt="article-preview">
+                    <img class="project-image" src="../images/article preview.png" alt="article-preview">
                     <div class="title">Article Preview Component</div>
                 </div>
                 <div class="project">
-                    <img class="project-image" src="/images/profile card.png" alt="profile-card">
+                    <img class="project-image" src="../images/profile card.png" alt="profile-card">
                     <div>Profile Card Component</div>
                 </div>
                 <div class="project">
-                    <img class="project-image" src="/images/3 column preview card.png" alt="profile-card">
+                    <img class="project-image" src="../images/3 column preview card.png" alt="profile-card">
                     <div>3 Column Card Component</div>
                 </div>
                 <div class="project">
-                    <img class="project-image" src="/images/joricky-stat-preview.png" alt="profile-card">
+                    <img class="project-image" src="../images/joricky-stat-preview.png" alt="profile-card">
                     <div>Stat Preview Component</div>
                 </div>
                 <div class="project">
-                    <img class="project-image" src="/images/portfolio web design.png" alt="profile-card">
+                    <img class="project-image" src="../images/portfolio web design.png" alt="profile-card">
+                    <div>Portfolio Web Design</div>
+                </div>
+            </div>
+
+            <div class="project-list-frontend">
+                <div class="project">
+                    <img class="project-image" src="../images/article preview.png" alt="article-preview">
+                    <div class="title">Article Preview Component</div>
+                </div>
+                <div class="project">
+                    <img class="project-image" src="../images/profile card.png" alt="profile-card">
+                    <div>Profile Card Component</div>
+                </div>
+                <div class="project">
+                    <img class="project-image" src="../images/3 column preview card.png" alt="profile-card">
+                    <div>3 Column Card Component</div>
+                </div>
+                <div class="project">
+                    <img class="project-image" src="../images/joricky-stat-preview.png" alt="profile-card">
+                    <div>Stat Preview Component</div>
+                </div>
+            </div>
+
+            <div class="project-list-uiux">
+                <div class="project">
+                    <img class="project-image" src="../images/portfolio web design.png" alt="profile-card">
                     <div>Portfolio Web Design</div>
                 </div>
             </div>
@@ -53,20 +84,28 @@
     </main>
 
     <footer>
-        <h2>Get in Touch</h2>
-        <div class="contact">
-            <i class="fas fa-envelope"></i><span>joricky990@gmail.com</span>
-            <i class="fab fa-linkedin"></i><span>Jonathan Ricky</span>
-            <i class="fab fa-whatsapp-square"></i><span>087823945016</span>
+        <div class="footer-wrapper">
+            <h2>Get in Touch</h2>
+            <div class="footer-menu">
+                <div class="contact">
+                    <ul>
+                        <li><i class="fas fa-envelope"></i><span>joricky990@gmail.com</span></li>
+                        <li><i class="fab fa-linkedin"></i><span>Jonathan Ricky</span></li>
+                        <li><i class="fab fa-whatsapp"></i><span>087823945016</span></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>Jonathan Ricky S</li>
+                        <li>Home</li>
+                        <li>Projects</li>
+                    </ul>
+                </div>
+            </div>
+            <p>Copyright © 2021 | Jonathan Ricky S. All Rights Reserved.</p>
         </div>
-        <div class="menu">
-            <ul>
-                <li>Jonathan Ricky S</li>
-                <li>Home</li>
-                <li>Projects</li>
-            </ul>
-        </div>
-        Copyright © 2021 | Jonathan Ricky S. All Rights Reserved.
     </footer>
+
+    <script src="/script.js"></script>
 </body>
 </html>
