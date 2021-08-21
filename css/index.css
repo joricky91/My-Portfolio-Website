@@ -21,7 +21,7 @@ body{
 }
 
 /* Header Section */
-header{
+nav{
     background-color: #090C14;
     display: flex;
     justify-content: space-around;
@@ -32,8 +32,7 @@ header{
     padding: 2rem;
 }
 
-nav > ul{
-    width: 20vw;
+nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -41,14 +40,27 @@ nav > ul{
     margin-right: 1.5rem;
 }
 
-nav > ul a{
+nav ul li{
+    margin-right: 3rem;
+}
+
+nav ul a{
     text-decoration: none;
     color: white;
 }
 
+nav ul li a:hover{
+    color: #EDBF4B;
+}
+
 .name{
-    width: 60vw;
+    flex: 1;
     margin-left: 2rem;
+}
+.menu{
+    display: none;
+    font-size: 20px;
+    margin-right: 1rem;
 }
 
 /* About me Section */
@@ -343,7 +355,7 @@ footer{
 }
 
 @media (max-width: 796px){
-    header{
+    nav{
         background-color: #090C14;
         display: flex;
         justify-content: space-around;
@@ -354,6 +366,33 @@ footer{
         padding: 2rem;
         position: fixed;
         z-index: 10;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: black;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        margin-right: 0;
+        margin-top: 2rem;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 0.7s;
+    }
+    nav ul li{
+        font-size: 25px;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+    nav ul.slide{
+        transform: translateX(0);
+    }
+    .menu{
+        display: block;
     }
     .container{
         max-width: 100vw;
@@ -385,6 +424,10 @@ footer{
         padding: 4rem .5rem 4rem 3rem;
         margin-top: .5rem;
     }
+    .skill-wrapper .my-skill ul li{
+        font-size: 14px;
+        padding: .2rem 1rem;
+    }
     .portfolio-wrapper .portfolio{
         padding: 4rem 1rem 4rem 1rem;
     }
@@ -405,7 +448,7 @@ footer{
         color: white;
         border: 1px solid #3E3E3E;
         background-color: #3E3E3E;
-        padding: .8rem;
+        padding: 1rem;
         width: 100%;
         text-align: center;
     }
@@ -438,6 +481,22 @@ footer{
     }
     .footer-wrapper{
         padding: 4rem 3rem 4rem 3rem;
+    }
+}
+@media(max-width: 490px){
+    .portfolio-wrapper .portfolio .project-wrapper .project .title{
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 458px) {
+    .footer-wrapper .footer-menu{
+        flex-direction: column;
+        max-width: 90%;
+        flex-wrap: wrap;
+    }
+    .footer-wrapper .footer-menu .menu{
+        text-align: end;
     }
 }
 
