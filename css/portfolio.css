@@ -13,23 +13,26 @@ body{
     width: 100vw;
     max-width: 100%;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    max-width: 100vw;
 }
 
 /* Header Section */
-header{
+nav{
     background-color: #090C14;
     display: flex;
     justify-content: space-around;
     align-items: center;
     top: 0;
-    /* position: absolute; */
     width: 100%;
     min-height: 4rem;
     padding: 2rem;
 }
 
-nav > ul{
-    width: 20vw;
+nav ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -37,23 +40,83 @@ nav > ul{
     margin-right: 1.5rem;
 }
 
-nav > ul a{
+nav ul li{
+    margin-right: 3rem;
+}
+
+nav ul a{
     text-decoration: none;
     color: white;
 }
 
-.name{
-    width: 60vw;
-    margin-left: 2rem;
+nav ul li a:hover,
+nav ul li a.yellow{
+    color: #EDBF4B;
 }
 
-.portfolio{
+.name{
+    flex: 1;
+    margin-left: 2rem;
+}
+.toggle{
+    display: none;
+    font-size: 20px;
+    margin-right: 1rem;
+}
+.portfolio-wrapper{
     background-color: #090C14;
+}
+
+.portfolio-wrapper .portfolio{
+    padding: 4rem 2rem 4rem 6rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio-wrapper .portfolio .category ul li{
+    font-size: 18px;
+}
+
+.portfolio-wrapper .portfolio .category #btnAll:hover,
+.portfolio-wrapper .portfolio .category #btnFront:hover,
+.portfolio-wrapper .portfolio .category #btnUI:hover,
+.active{
+    border-bottom: 2px solid white;
+}
+
+.portfolio-wrapper .portfolio h2{
+    color: #EDBF4B;
+    margin-bottom: .5rem;
+}
+
+.portfolio-wrapper .portfolio .project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-wrapper .portfolio .project .title{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #3E3E3E;
+    background-color: #3E3E3E;
+    padding: .5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.portfolio .category ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
 }
 
 .portfolio .category ul li a{
     text-decoration: none;
     color: white;
+    margin-right: 2rem;
 }
 
 .portfolio .project-image{
@@ -63,17 +126,24 @@ nav > ul a{
 
 .portfolio .project-list-all{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .portfolio .project-list-frontend{
     display: none;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .portfolio .project-list-uiux{
     display: none;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio .project{
+    margin: 2rem 2rem 0 0;
 }
 
 /* Footer Section */
@@ -137,4 +207,22 @@ footer{
 .footer-wrapper .footer-menu .contact{
     display: flex;
     flex-direction: column;
+}
+@media(max-width: 1185px){
+    .portfolio-wrapper .portfolio .project-list-all,
+    .portfolio-wrapper .portfolio .project-list-frontend,
+    .portfolio-wrapper .portfolio .project-list-uiux{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 832px){
+    .portfolio .project-image{
+        width: 100%;
+        height: 90%;
+    }
+    .portfolio-wrapper .portfolio .project .title{
+        padding: 1rem;
+        font-size: 20px;
+    }
 }
