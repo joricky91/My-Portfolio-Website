@@ -226,3 +226,88 @@ footer{
         font-size: 20px;
     }
 }
+
+@media (max-width: 796px){
+    body{
+        height: 100vh;
+        max-height: 100%;
+    }
+    nav{
+        background-color: #090C14;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        top: 0;
+        width: 100%;
+        min-height: 4rem;
+        padding: 2rem;
+        position: fixed;
+        z-index: 10;
+    }
+    nav .name{
+        margin-left: 1rem;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: black;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+        margin-right: 0;
+        margin-top: 2rem;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 0.7s;
+    }
+    nav ul li{
+        font-size: 25px;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+    nav ul.slide{
+        transform: translateX(0);
+    }
+    .toggle{
+        display: block;
+    }
+    .portfolio-wrapper .portfolio{
+        padding: 6.5rem 1rem 4rem 3rem;
+    }
+    .footer-wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 3rem 4rem 3rem;
+    }
+    .footer-wrapper .footer-menu .contact{
+        margin-left: 0;
+    }
+    .footer-wrapper .footer-menu .menu{
+        margin-right: 0;
+    }
+}
+@media (max-width: 570px){
+    .footer-wrapper{
+        padding: 4rem 3rem 4rem 3rem;
+    }
+}
+@media(max-width: 490px){
+    .portfolio-wrapper .portfolio .project .title{
+        font-size: 1rem;
+        padding: .5rem;
+    }
+}
+@media(max-width: 458px) {
+    .footer-wrapper .footer-menu{
+        flex-direction: column;
+        max-width: 90%;
+        flex-wrap: wrap;
+    }
+    .footer-wrapper .footer-menu .menu{
+        text-align: end;
+    }
+}
