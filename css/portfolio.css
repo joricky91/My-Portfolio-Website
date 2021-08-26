@@ -51,6 +51,7 @@ nav ul a{
 
 nav ul li a:hover,
 nav ul li a.yellow{
+    transition: all 0.5s;
     color: #EDBF4B;
 }
 
@@ -58,11 +59,13 @@ nav ul li a.yellow{
     flex: 1;
     margin-left: 2rem;
 }
-.toggle{
+nav .toggle{
     display: none;
     font-size: 20px;
     margin-right: 1rem;
 }
+
+/* Portfolio Section */
 .portfolio-wrapper{
     background-color: #090C14;
 }
@@ -101,10 +104,19 @@ nav ul li a.yellow{
     text-decoration: none;
     color: white;
     border: 1px solid #3E3E3E;
-    background-color: #3E3E3E;
+    background: linear-gradient(to right, #EDBF4B 50%, #3E3E3E 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
     padding: .5rem;
     width: 100%;
     text-align: center;
+    transition: all 0.5s;
+}
+
+.portfolio-wrapper .portfolio .project .title:hover{
+    background-position: left bottom;
+    border: 1px solid #EDBF4B;
+    color: black;
 }
 
 .portfolio .category ul{
@@ -271,7 +283,7 @@ footer{
     nav ul.slide{
         transform: translateX(0);
     }
-    .toggle{
+    nav .toggle{
         display: block;
     }
     .portfolio-wrapper .portfolio{
@@ -300,11 +312,9 @@ footer{
         font-size: 1rem;
         padding: .5rem;
     }
-}
-@media(max-width: 458px) {
     .footer-wrapper .footer-menu{
         flex-direction: column;
-        max-width: 90%;
+        max-width: 100%;
         flex-wrap: wrap;
     }
     .footer-wrapper .footer-menu .menu{

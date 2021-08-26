@@ -6,47 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/project.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <title>Article Preview Component</title>
 </head>
 <body>
     <main class="container">
-        <header>
-            <div class="name">
+        <nav>
+            <div class="name"> 
                 <p>Jonathan Ricky S</p>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="../html/project.html">Projects</a></li>
-                </ul>
-            </nav>
-        </header>
+            
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/project.html" class="yellow">Projects</a></li>
+            </ul>
+            <i class="fas fa-bars toggle"></i> 
+        </nav>
 
-        <div class="project-section">
-            <p>< Projects</p>
-            <h2>3 Column Preview Card Component</h2>
-
-            <div class="img-container">
-                <div></div>
-                <img src="../images/3 column preview card.png" alt="3-column-preview-component">
-                <div></div>
+        <div class="project-wrapper">
+            <div class="project">
+                <a href="../html/project.html">< Projects</a>
+                <h2>3 Column Preview Card Component</h2>
+    
+                <div class="img-container">
+                    <div></div>
+                    <img src="../images/3 column preview card.png" alt="3-column-preview-component">
+                    <div></div>
+                </div>
+    
+                <div class="project-text">
+                    <div class="about">
+                        <h3>About</h3>
+                        <p>This project is a challenge from <a href="https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-" target="_blank">Frontend Mentor</a>.
+                        In this challenge, I have to create the 3 column preview card component as close as the original design
+                        provided in the challenge.</p>
+                    </div>
+                    
+                    <div class="language">
+                        <h3>Language</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                    </div>
+                    <a class="btn" href="https://3-columns-preview-card.netlify.app/" target="_blank">Visit Website</a>
+                </div>
             </div>
 
-            <div class="project-text">
-                <h3>About</h3>
-                <p>This project is a challenge from <a href="https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-" target="_blank">Frontend Mentor</a>.
-                In this challenge, I have to create the 3 column preview card component as close as the original design
-                provided in the challenge.</p>
-
-                <h3>Language</h3>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                </ul>
-
-                <a href="https://3-columns-preview-card.netlify.app/" target="_blank">Visit Website</a>
-            </div>
         </div>
     </main>
 
@@ -72,5 +77,6 @@
             <p>Copyright © 2021 | Jonathan Ricky S. All Rights Reserved.</p>
         </div>
     </footer>
+    <script src="../index.js"></script>
 </body>
 </html>
