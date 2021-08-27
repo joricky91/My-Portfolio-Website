@@ -180,6 +180,15 @@ footer{
     margin-top: 1.5rem;
 }
 
+.footer-wrapper .footer-menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-wrapper .footer-menu ul li a:hover{
+    color: #EDBF4B;
+}
+
 .footer-wrapper .footer-menu span{
     margin-left: .7rem;
 }
